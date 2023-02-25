@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./images/favicon-16x16.png" type="image/x-icon">
+    <title>MOVE DEVELOPERS DAO</title>
+    <style>
+        .main-partner-sec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .companies {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 0;
+        }
+
+        .c-box {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            z-index: 1;
+        }
+
+        .c-name {
+
+            margin: auto;
+            width: 144px;
+            height: 38px;
+
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 38px;
+
+
+            text-align: center;
+            text-decoration: none;
+            color: aquamarine;
+            cursor: pointer;
+            transition-property: text-decoration font-size;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .c-name:hover {
+            text-decoration: underline;
+            font-size: 30px;
+
+        }
+
+        .c-img {
+            width: 45px;
+            height: 45px;
+            margin: 0 20px;
+        }
+
+        .martian {
+            /* top: px; */
+            bottom: 35px;
+            right: 450px;
+        }
+
+        .aptos {
+            bottom: 110px;
+            right: 130px;
+        }
+
+        .petra {
+
+            right: 500px;
+        }
+
+        .movebit {
+            bottom: 50px;
+            right: 100px;
+        }
+
+        .kanalabs {
+            top: 30px;
+            right: 220px;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* #partners-img{
+                width: 400px;
+                height: 400px;
+            } */
+
+            .c-img {
+                width: 43px;
+                height: 43px;
+            }
+
+            .c-name {
+                font-size: 23px;
+            }
+
+            .c-name:hover {
+                font-size: 27px;
+            }
+
+            .martian {
+                bottom: 20px;
+                right: 440px;
+            }
+
+            .aptos {
+                bottom: 100px;
+                right: 150px;
+            }
+
+            .petra {
+
+                right: 500px;
+            }
+
+            .movebit {
+                bottom: 80px;
+                right: 120px;
+            }
+
+            .kanalabs {
+
+                right: 250px;
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+            #partners-img {
+                width: 450px;
+                height: 450px;
+            }
+
+            .c-img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .c-name {
+                font-size: 20px;
+            }
+
+            .c-name:hover {
+                font-size: 25px;
+            }
+
+            .martian {
+                /* bottom: 10px; */
+                top: 10px;
+                right: 440px;
+            }
+
+            .aptos {
+                bottom: 80px;
+                right: 200px;
+            }
+
+            .petra {
+
+                right: 480px;
+            }
+
+            .movebit {
+                bottom: 80px;
+                right: 180px;
+            }
+
+            .kanalabs {
+                bottom: 100px;
+                right: 300px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            #partners-img {
+                width: 450px;
+                height: 450px;
+            }
+
+            .c-img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .c-name {
+                width: 100px;
+                height: 38px;
+                font-size: 20px;
+            }
+
+            .c-name:hover {
+                font-size: 25px;
+            }
+
+            .martian {
+                bottom: 15px;
+
+                right: 440px;
+            }
+
+            .aptos {
+
+                right: 250px;
+            }
+
+            .petra {
+
+                right: 450px;
+            }
+
+            .movebit {
+
+                right: 180px;
+            }
+
+            .kanalabs {
+
+                right: 300px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            #partners-img {
+                width: 350px;
+                height: 350px;
+            }
+
+            .c-img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .c-name {
+                width: 80px;
+                height: 30px;
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .c-name:hover {
+                font-size: 20px;
+            }
+
+            .martian {
+                /* bottom: 20px; */
+                top: 30px;
+
+                right: 320px;
+            }
+
+            .aptos {
+                top: 40px;
+                right: 150px;
+            }
+
+            .petra {
+
+                right: 350px;
+            }
+
+            .movebit {
+                bottom: 150px;
+                right: 180px;
+            }
+
+            .kanalabs {
+                top: 0px;
+                bottom: 230px;
+                /* top: 100px; */
+                right: 250px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            #partners-img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .c-img {
+                /* margin: 10px 10px; */
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                width: 20px;
+                height: 20px;
+            }
+
+            .c-name {
+                width: 50px;
+                height: 25px;
+                font-size: 10px;
+                text-align: left;
+            }
+
+            .c-name:hover {
+                font-size: 15px;
+            }
+
+            .martian {
+                /* bottom: 20px; */
+                top: 30px;
+
+                right: 250px;
+            }
+
+            .aptos {
+                top: 40px;
+                right: 90px;
+            }
+
+            .petra {
+
+                right: 250px;
+            }
+
+            .movebit {
+                bottom: 140px;
+                right: 120px;
+            }
+
+            .kanalabs {
+                /* top:0px; */
+                /* bottom: 230px; */
+                top: -40px;
+                right: 150px;
+            }
+        }
+
+
+
+
+
+        /* event section */
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo-hamburger">
+            <div class="logo">
+                <img class="logo-img" src="./images/logo-min 3.png" alt="">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="link-box"><a href="#" onclick="return false" class="link">Move IDE</a></div>
+            <div class="link-box"><a href="https://github.com/movedevelopersdao" class="link">Learn</a></div>
+            <div class="link-box"><a href="#" onclick="return false" class="link">Jobs</a></div>
+            <div class="link-box"><a href="https://linktr.ee/movedevelopers" class="link">Socials</a></div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="main-text">
+            <div id="intro">
+                <p>Become a part of world's best Move Lang developer community</p>
+            </div>
+            <div id="main-para">
+                <p>Move developers dao is a community of experienced developers, strategies and operators that
+                    have high conviction on <span id="hashTag">#MoveLang.</span></p>
+            </div>
+            <div class="main-buttons">
+                <button onclick="openTwitter()" class="btns">Twitter</button>
+                <button onclick="openDiscord()" class="btns">Discord</button>
+            </div>
+        </div>
+        <div class="main-img-box">
+            <img class="main-img" src="./images/03 2.png" alt="">
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="card-heading">
+            <p class="card-para">What we have to offer you</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+
+                <div class="card-content">
+                    <img src="./images/card1-removebg-preview.png" alt="" class="card-img">
+                    <h1 class="card-writeUp-head">Build DApps on Aptos, Sui</h1>
+                    <p class="card-writeUp-desc">No more need to build alone, join our community to build alongside
+                        thousands of other Move developers</p>
+                    <button class="card-btn">Start Building</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/card2-removebg-preview.png" alt="" class="card-img">
+                    <h1 class="card-writeUp-head">Interactive Move lang courses</h1>
+                    <p class="card-writeUp-desc">Learn to code in Move language using our in browser step-by-step
+                        lessons to
+                        take you from basics to building your own fully functional DApps Aptos</p>
+                    <button onclick="openAptosDocs()" class="card-btn">Learn</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/card3-removebg-preview.png" alt="" class="card-img">
+                    <h1 class="card-writeUp-head">Grants Allocation & Bounty Hosting</h1>
+                    <p class="card-writeUp-desc">We allow DAOs & foundations to various host grants programs in the
+                        community. Projects are allowed to host bounties to secure themselves against catastrophic
+                        exploits.
+                    </p>
+                    <button class="special-btns card-btn">Explore</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/card4-removebg-preview.png" alt="" class="card-img">
+                    <h1 class="card-writeUp-head">Ease the Hiring Process</h1>
+                    <p class="card-writeUp-desc">Based on a curated data, hire the perfect fit for your project using
+                        our extensive jobs board.</p>
+                    <button class="btn card-btn">Apply</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/graduation-hat.png" alt="" class="card-img">
+                    <h1 class="card-writeUp-head">University Ambassador Program</h1>
+                    <p class="card-writeUp-desc">Connect with our team and get a chance to become the college
+                        ambassador. Hold #MoveLang
+                        workshops, hackathons in your college and explore the best in class opportunities in Web3
+                    </p>
+                    <button class="btn card-btn">Connect</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="events">
+        <div class="event-heading">
+            <h1 class="event-para">Events</h1>
+        </div>
+        <div class="mytabs">
+            <div class="btn-box">
+                <div class="event-btn past-btn">Past Events</div>
+                <div class="event-btn upcoming-btn">Upcoming Events</div>
+            </div>
+
+            <div class="event-cards past-event-cards">
+                <div class="past-events event-sec">
+
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers Hangout</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+
+                                developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./images/Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="upcoming-events event-sec">
+
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers Hangout</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+
+                                developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./images/Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="event-cards upcoming-event-cards">
+                <div class="past-events event-sec">
+
+                    <div class="event-card">
+                        <div class="event-img">
+
+
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+
+                                developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./images/Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="upcoming-events event-sec">
+
+                    <div class="event-card">
+                        <div class="event-img">
+
+
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+
+                                developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./images/Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <section class="college-communities">
+        <div class="college-communities-head">
+            <h1 class="college-head">College Communities</h1>
+        </div>
+        <div class="colleges">
+            <div class="college">
+                <h1 class="college-name">REVA</h1>
+            </div>
+            <div class="college">
+                <h1 class="college-name">BMSCE</h1>
+            </div>
+            <div class="college">
+                <h1 class="college-name">BMSIT</h1>
+            </div>
+            <div class="college">
+                <h1 class="college-name">PES</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="partners">
+        <div class="card-heading">
+            <p class="card-para">Our Partners</p>
+        </div>
+        <div class="main-partner-sec">
+            <img id="partners-img" src="./images/Group 1261152705 (1).png" alt="">
+            <div class="companies">
+                <div class="c-box martian">
+                    <img class="c-img" src="./images/martian.png" alt="">
+
+                    <a href="https://martianwallet.xyz/" class="c-name">Martian</a>
+                </div>
+                <div class="c-box aptos">
+                    <img class="c-img" src="./images/aptos.png" alt="">
+                    <a href="https://aptoslabs.com/" class="c-name">Aptos</a>
+                </div>
+                <div class="c-box petra">
+                    <img class="c-img" src="./images/petra.png" alt="">
+                    <a href="https://petra.app/" class="c-name">Petra</a>
+                </div>
+                <div class="c-box movebit">
+                    <img class="c-img" src="./images/movebit.png" alt="">
+                    <a href="https://movebit.xyz/" class="c-name">MoveBit</a>
+                </div>
+                <div class="c-box kanalabs">
+                    <img class="c-img" src="./images/kanalabs.png" alt="">
+                    <a href="https://www.kanalabs.io/" class="c-name">KanaLabs</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="card-heading">
+            <p class="card-para">Build with us</p>
+        </div>
+        <p class="footer-terms">2022 All Rights Reserved Terms of Services</p>
+
+    </footer>
+
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        hamburger.onclick = function () {
+            let links = document.querySelector('.links');
+            links.classList.toggle('active');
+        }
+
+        let buttons = document.querySelectorAll('.event-btn')
+
+        let eventCards = document.querySelectorAll('.event-cards')
+
+        buttons[0].addEventListener('click', openEventCards0)
+        buttons[1].addEventListener('click', openEventCards1)
+
+        function openEventCards0() {
+            buttons.forEach((node) => {
+                node.style.boxShadow = "none";
+                node.style.opacity = "0.5";
+                node.style.filter = "alpha(opacity = 50)";
+
+            });
+            buttons[0].style.boxShadow = '12px 12px 24px #1E1E1E';
+            buttons[0].style.opacity = "1";
+            buttons[0].style.filter = "alpha(opacity = 100)";
+            eventCards.forEach((node) => {
+                node.style.display = "none";
+            });
+            eventCards[0].style.display = "flex";
+        }
+        function openEventCards1() {
+            buttons.forEach((node) => {
+                node.style.boxShadow = "none";
+                node.style.opacity = "0.5";
+                node.style.filter = "alpha(opacity = 50)";
+
+            });
+            buttons[1].style.boxShadow = '12px 12px 24px #1E1E1E';
+            buttons[1].style.opacity = "1";
+            buttons[1].style.filter = "alpha(opacity = 100)";
+            eventCards.forEach((node) => {
+                node.style.display = "none";
+            });
+            eventCards[1].style.display = "flex";
+        }
+
+        function openTwitter(){
+            window.open('https://twitter.com/MoveBuilders', "_self");
+        }
+        function openDiscord(){
+            window.open('https://discord.com/invite/AVr5u59tXs', "_self");
+        }
+        function openAptosDocs(){
+            window.open('https://aptos.dev/', '_self');
+        }
+    
+
+    </script>
+</body>
+
+</html>
