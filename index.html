@@ -397,9 +397,9 @@
 
                 <div class="card-content">
                     <img src="./images/card1-removebg-preview.png" alt="" class="card-img">
-                    <h1 class="card-writeUp-head">Build DApps on Aptos, Sui</h1>
+                    <h1 class="card-writeUp-head">Build DApps on Aptos</h1>
                     <p class="card-writeUp-desc">No more need to build alone, join our community to build alongside
-                        thousands of other Move developers</p>
+                        thousands of other Move developers.</p>
                     <button class="card-btn">Start Building</button>
                 </div>
 
@@ -409,8 +409,7 @@
                     <img src="./images/card2-removebg-preview.png" alt="" class="card-img">
                     <h1 class="card-writeUp-head">Interactive Move lang courses</h1>
                     <p class="card-writeUp-desc">Learn to code in Move language using our in browser step-by-step
-                        lessons to
-                        take you from basics to building your own fully functional DApps Aptos</p>
+                        lessons to take you from basics to building your own fully functional DApps on Aptos.</p>
                     <button onclick="openAptosDocs()" class="card-btn">Learn</button>
                 </div>
             </div>
@@ -440,7 +439,7 @@
                     <h1 class="card-writeUp-head">University Ambassador Program</h1>
                     <p class="card-writeUp-desc">Connect with our team and get a chance to become the college
                         ambassador. Hold #MoveLang
-                        workshops, hackathons in your college and explore the best in class opportunities in Web3
+                        workshops, hackathons in your college and explore the best in class opportunities in Web3.
                     </p>
                     <button class="btn card-btn">Connect</button>
                 </div>
@@ -478,9 +477,8 @@
                                     class="event-des-para-span">#MoveIndia</span>event that was
                                 held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
                                 We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+
-                                developers &
-                                enthusiasts who attended the event.</h1>
-                            <div class="twitter-box">
+                                developers & enthusiasts who attended the event.</h1>
+                            <div class="twitter-box" onclick="openEventTweet()">
                                 <img src="./images/Vector.png" alt="" class="twitter-logo">
                             </div>
                         </div>
@@ -679,6 +677,9 @@
         }
         function openAptosDocs(){
             window.open('https://aptos.dev/', '_self');
+        }
+        function openEventTweet(){
+            window.open('https://twitter.com/MoveBuilders/status/1604769496862195712?s=20', '_self');
         }
     
 
