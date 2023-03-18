@@ -442,10 +442,20 @@ button:hover{
     margin: auto;
 }
 
-.event-img {
+.event-img1 {
     /* background: url('./eec5544a-5b8c-4380-bb80-c11339065b94\ 1.png'); */
     /* background: #1E1E1E; */
     background: url('./images/pic-removebg-preview.png') no-repeat center center ;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    height: 223px;
+}
+
+.event-img2{
+    background: url('./images/event-2.png') no-repeat center center ;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
