@@ -595,6 +595,8 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 .college-img{
     display: block;
     margin: auto;
+    width: 500px;
+    height: 150px;
 }
 
 
@@ -793,6 +795,10 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         flex-direction: column;
         justify-content: space-around;
     }
+    .college-img{
+        width: 300px;
+        height: 100px;
+    }
 }
 
 @media screen and  (max-width:450px){
@@ -947,6 +953,11 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         padding: 10px 15px;
 
     }
+    
+    .college-img{
+        width: 280px;
+        height: 90px;
+    }
 
 
     
@@ -980,6 +991,10 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     .main-img{
         width: 250px;
     } 
+    .college-img{
+        width: 220px;
+        height: 60px;
+    }
 }
 
 
