@@ -318,8 +318,24 @@ button:hover{
 }
 
 
+.event-cards{
+    margin: 50px 0;
+    display: flex;
+    overflow-x: auto;
+    
+}
 
-
+.event-card {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 12px 12px 24px #1E1E1E;
+    border-radius: 43px;
+    border: 2px solid rgba(236, 122, 224, 0.);
+    z-index: 0;
+    overflow-x: auto;
+    min-width: 440px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 
 .event-para {
@@ -327,7 +343,7 @@ button:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 41px;
+    font-size: 40px;
     line-height: 62px;
     text-align: center;
     background: linear-gradient(180deg, #706DFF 0%, rgba(236, 122, 224, 0.81) 20.31%, #15BFFD 58.85%);
@@ -338,11 +354,7 @@ button:hover{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.events-cards {
 
-    display: flex;
-    justify-content: space-around;
-}
 
 .card-head {
     text-align: center;
@@ -361,14 +373,27 @@ button:hover{
 
 }
 
-.event-card {
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 12px 12px 24px #1E1E1E;
-    border-radius: 43px;
-    border: 2px solid rgba(236, 122, 224, 0.);
-    z-index: 0;
-    overflow: hidden;
+
+
+
+
+.event-cards::-webkit-scrollbar {
+    width: 6px;
 }
+
+.event-cards::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: #424072 0%;
+}
+
+
+.event-cards::-webkit-scrollbar-thumb {
+    background: rgba(209, 134, 178, 0.866) 82.5%;
+    border-radius: 6px;
+}
+
+
+
 
 .event-sec {
     margin: 20px 20px;
@@ -377,10 +402,11 @@ button:hover{
 .event-des {
     margin: 20px 30px;
     padding: 20px 20px;
-    width: 366px;
-    /* height: 222px; */
+    min-width: 366px;
+    height: 222px;
     background: rgba(240, 239, 239, 0.03);
     border-radius: 39px;
+    min-height: 290px;
 }
 
 
@@ -401,6 +427,7 @@ button:hover{
     text-fill-color: transparent;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 54px;
 }
 
 .event-des-para {
@@ -417,7 +444,7 @@ button:hover{
     letter-spacing: 0.14em;
 
     color: #FFFFFF;
-
+    min-height: 150px;
     opacity: 0.55;
 }
 
@@ -542,28 +569,13 @@ button:hover{
 }
 
 
-.past-btn {
-    box-shadow: 12px 12px 24px #1E1E1E;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.upcoming-btn {
-
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-.event-cards {
+/* .event-cards {
     margin: 50px 0;
-    display: flex;
-    justify-content: space-around;
+    
 
-}
+} */
 
-.upcoming-event-cards {
-    display: none;
-}
+
 
 .college-head {
     font-family: 'Poppins';
@@ -610,8 +622,16 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     height: 150px;
 }
 
+.communities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.community-img{
+    height: 200px;
+    width: 200px;
+}
 
 
 
@@ -639,25 +659,29 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         
     }
 
-    .date-box {
+    /* .date-box {
         left: 250px;
-    }
+    } */
 
-    .event-des {
+    /* .event-des {
         width: 250px;
-    }
+    } */
 }
 
 @media screen and (max-width: 750px){
     .event-cards {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        overflow: hidden;
+        overflow-y: auto;
+        height: 800px;
         align-items: center;
     }
     
     .event-card{
         width: 400px;
+        min-height: 600px;
     }
     .event-des {
         margin: auto;
@@ -677,11 +701,18 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 @media screen and (max-width: 550px)
 {
     .event-card{
-        width: 400px;
+        min-width: 300px;
+       
     }
     .event-des{
-        width: 300px;
+        min-width: 200px;
+        min-height: 330px
     }
+    .exceptional-tweet-box{
+        position: relative;
+        top: 45px;
+    }
+
 }
 
 
@@ -742,8 +773,8 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     }
 
     .cards {
-        overflow: hidden;
         height: 450px;
+        overflow: hidden;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
@@ -804,12 +835,18 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     .event-cards {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
     .college-img{
         width: 300px;
         height: 100px;
+    }
+
+    .community-img{
+        height: 150px;
+        width: 150px;
+        
     }
 }
 
@@ -844,7 +881,7 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     .date-box {
         width: 60px;
         height: 60px;
-        left: 220px;
+        left: 230px;
     }
     .dm{
         font-size: 15px;
@@ -852,10 +889,14 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     }
 
     .event-card{
-        width: 300px;
+        width: 320px;
     }
     .event-des{
-        width: 200px;
+        width: 220px;
+    }
+
+    .exceptional-tweet-box{
+        top: 20px;
     }
     
     .event-des-head {
@@ -903,11 +944,11 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         margin-top: 10px;
     }
 
-    .event-cards {
+    /* .event-cards {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    }
+    } */
 
     .upcoming-event-cards {
         display: none;
@@ -917,7 +958,11 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         font-size: 18px;
         line-height: 20px;
     }
-
+    .event-card{
+        width: 300px;
+        /* height: 650px; */
+    }
+    
     .btn-box {
         display: flex;
         justify-content: space-around;
@@ -935,6 +980,7 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 
     .event-des {
         width: 210px;
+        min-height: 300px;
     }
 
     .event-des-head {
@@ -984,9 +1030,7 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 }
 
 @media screen and  (max-width:365px){
-    .event-des {
-        width: 180px;
-    }
+    
 
     .date-box{
         left: 220px;
@@ -1000,7 +1044,10 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         height: 55px;
         line-height: 18px;
     }
-
+    .community-img{
+        height: 120px;
+        width: 120px;
+    }
 }
 
 @media screen and  (max-width:350px){
@@ -1015,6 +1062,10 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         width: 220px;
         height: 60px;
     }
+    .event-card{
+        width: 250px;
+    }
+    
 }
 
 
@@ -1100,7 +1151,7 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     } */
 
     .event-card{
-        width: 250px;
+        width: 50px;
     }
     
     .event-para{
@@ -1127,9 +1178,9 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 
     
 
-    .event-des {
+    /* .event-des {
         width: 180px;
-    }
+    } */
 
     .event-des-head {
         font-size: 18px;
@@ -1137,15 +1188,15 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     }
 
     .event-des-para {
-        font-size: 8px;
-        line-height: 10px;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .date-box {
         width: 50px;
         height: 50px;
-        left: 185px;
-        top: 50px
+        left: 230px;
+        top: 30px
     }
     .dm{
         font-size: 8px;
