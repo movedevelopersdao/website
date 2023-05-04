@@ -624,13 +624,18 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 
 .communities{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .community-img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+}
+
+.pune-dao{
+    width: 300px;
+    height: 150px;
 }
 
 
@@ -666,6 +671,15 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     /* .event-des {
         width: 250px;
     } */
+    .community-img{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .pune-dao{
+        width: 250px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -695,6 +709,15 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 
     .date-box{
         left: 300px;
+    }
+    .communities{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .community{
+        margin-top: 20px;
     }
 }
 
@@ -847,6 +870,11 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
         height: 150px;
         width: 150px;
         
+    }
+
+    .pune-dao{
+        width: 250px;
+        height: 150px;
     }
 }
 
@@ -1047,6 +1075,11 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     .community-img{
         height: 120px;
         width: 120px;
+    }
+
+    .pune-dao{
+        width: 220px;
+        height: 120px;
     }
 }
 
