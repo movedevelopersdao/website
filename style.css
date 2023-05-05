@@ -634,8 +634,8 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 .college-img{
     display: block;
     margin: auto;
-    width: 500px;
-    height: 150px;
+    width: 300px;
+    height: 100px;
 }
 
 .communities{
@@ -647,13 +647,13 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 }
 
 .community-img{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 
 .pune-dao{
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 100px;
 }
 
 .footer{
@@ -769,21 +769,27 @@ cursor: pointer;
     /* .event-des {
         width: 250px;
     } */
-    .community-img{
-        height: 100px;
-        width: 100px;
-    }
+
     
-    .pune-dao{
-        width: 250px;
-        height: 100px;
-    }
     .info-side-box{
         margin-left: 50px;
         margin-right: 0px;
     }
     .event-para {
         font-size: 35px;
+    }
+    .college-img{
+        width: 200px;
+        height: 80px;
+    }
+
+    .community-img{
+        width: 80px;
+        height: 80px;
+    }
+    .pune-dao{
+        width: 120px;
+        height: 80px;
     }
 }
 
@@ -992,20 +998,29 @@ cursor: pointer;
     }
 
     .college-img{
-        width: 300px;
-        height: 100px;
+        width: 200px;
+        height: 80px;
     }
 
     .community-img{
-        height: 150px;
-        width: 150px;
+        width: 80px;
+        height: 80px;
+    }
+    .pune-dao{
+        width: 120px;
+        height: 80px;
+    }
+
+    /* .community-img{
+        height: 100px;
+        width: 100px;
         
     }
 
     .pune-dao{
         width: 250px;
         height: 150px;
-    }
+    } */
     .footer-display-div{
         display: flex;
         flex-direction: column;
@@ -1087,6 +1102,21 @@ cursor: pointer;
     background-size: cover;
     z-index: 1;
     }
+
+    .college-img{
+        width: 200px;
+        height: 80px;
+    }
+
+    .community-img{
+        width: 80px;
+        height: 80px;
+    }
+    .pune-dao{
+        width: 120px;
+        height: 80px;
+    }
+
 
 }
 
@@ -1173,10 +1203,8 @@ cursor: pointer;
         font-size: 20px;
         line-height: 30px;
     }
-    .college-img{
-        width: 100px;
-        height: 50px;
-    }
+   
+
 
     .college-head{
         font-size: 35px;
@@ -1190,10 +1218,7 @@ cursor: pointer;
 
     }
 
-    .college-img{
-        width: 280px;
-        height: 90px;
-    }
+    
 
     .footer-terms {
         font-size: 10px;
@@ -1220,15 +1245,7 @@ cursor: pointer;
         height: 55px;
         line-height: 18px;
     }
-    .community-img{
-        height: 120px;
-        width: 120px;
-    }
-
-    .pune-dao{
-        width: 220px;
-        height: 120px;
-    }
+    
 }
 
 @media screen and  (max-width:350px){
@@ -1239,10 +1256,7 @@ cursor: pointer;
         width: 250px;
     } 
 
-    .college-img{
-        width: 220px;
-        height: 60px;
-    }
+    
     .event-card{
         width: 250px;
     }
@@ -1429,6 +1443,6 @@ cursor: pointer;
         left: 170px;
     }
     .event-para {
-        font-size: 20px;
+        font-size: 20-px;
     }
 }
