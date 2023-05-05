@@ -585,19 +585,20 @@
         </div>
         <div class="communities">
             <div class="community">
-                <img class="community-img" src="./images/HYD DAO Logo - Black.png" alt="Hydrebad DAO">
+                <img onclick="openHydDao()" class="community-img" src="./images/HYD DAO Logo - Black.png" alt="Hydrebad DAO">
+                
+            </div>
+            
+            <div class="community">
+                <img onclick="openGdd()" class="community-img" src="./images/gdd-removebg-preview.png" alt="GARI DEVELOPERS DAO">
                 
             </div>
             <div class="community">
-                <img class="community-img pune-dao" src="./images/puneDao.png" alt="PUNE DAO">
+                <img onclick="openPuneDao()" class="community-img" src="./images/puneDao.png" alt="PUNE DAO">
                 
             </div>
             <div class="community">
-                <img class="community-img" src="./images/gdd-removebg-preview.png" alt="GARI DEVELOPERS DAO">
-                
-            </div>
-            <div class="community">
-                <img class="community-img" src="./images/funmovedao.jpg" alt="FUN MOVE DAO">
+                <img onclick="openFunDao()" class="community-img" src="./images/funmovedao.jpg" alt="FUN MOVE DAO">
                 
             </div>
 
@@ -686,8 +687,9 @@
                     <p class="useful-links-head-text useful-links-text">Follow Us</p>
                     <div class="follow-us-imgs">
                         <img onclick="openLinkedin()" class="follow-us-img" src="./images/linkedin.png" alt="">
-                        <img class="follow-us-img" src="./images/twitter.png" alt="">
+                        <img openTwitter() class="follow-us-img" src="./images/twitter.png" alt="">
                         <img onclick="openDiscord()" class="follow-us-img" src="./images/discord.png" alt="">
+                        <img onclick="openGitHub()" class="follow-us-img" src="./images/github.png" alt="">
                     </div>
                     
                 </div>
@@ -786,6 +788,19 @@ src="https://app.wonderchat.io/chatbot/clgkrayjn0brbmc0kflpb08u7"
         function openTwitter(){
             window.open('https://twitter.com/MoveBuilders', '_self');
         }
+        function openHydDao(){
+            window.open('https://twitter.com/hyderabaddao?s=21&t=uGmuP8mHNlf7MNnFWQqcGQ', '_self');
+        }
+        function openPuneDao(){
+            window.open('https://twitter.com/pune_dao?s=21&t=uGmuP8mHNlf7MNnFWQqcGQ', '_self');
+        }
+        function openGdd(){
+            window.open('https://twitter.com/garidevdao?s=21&t=uGmuP8mHNlf7MNnFWQqcGQ', '_self');
+        }
+        function openFunDao(){
+            window.open('https://twitter.com/movefunsdao?s=21&t=uGmuP8mHNlf7MNnFWQqcGQ', '_self');
+        }
+        
     </script>
 
 <script
