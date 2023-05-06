@@ -686,6 +686,8 @@ width: 100%;
 .follow-us-img{
     margin-right: 20px;
     cursor: pointer;
+    width: 25px ;
+    height: 23px;
 }
 
 .move-side-text{
