@@ -390,12 +390,13 @@
             </div>
         </div>
         <div class="links">
-            <div class="link-box"><a href="#" onclick="return false" class="link">Move IDE</a></div>
+            <div class="link-box" id="dashBoard"><a href="#" onclick="return false" class="link">DashBorads</a></div>
             <div class="link-box"><a href="https://move-developers-dao.gitbook.io/aptos-move-by-example/" class="link">Learn</a></div>
             <div class="link-box"><a href="#" onclick="return false" class="link">Jobs</a></div>
             <div class="link-box"><a href="https://linktr.ee/movedevelopers" class="link">Socials</a></div>
         </div>
     </nav>
+    <div id="drop-down" class="drop-down"><a style="text-align: center;" href="https://move-developers-dao.gitbook.io/aptos-move-by-example/"  class="link">Events Board</a><a style="text-align: center;" href="#" class="link">RFP Board</a><a href="#" style="text-align: center;"class="link">RFP Board</a></div>
 
     <section class="main">
         <div class="main-text">
@@ -706,6 +707,22 @@ src="https://app.wonderchat.io/chatbot/clgkrayjn0brbmc0kflpb08u7"
 ></iframe> -->
 
     <script>
+        
+        let dashBoard = document.getElementById('dashBoard');
+        let dropDown = document.getElementById('drop-down');
+        let dropDownOpen = false
+        dashBoard.addEventListener('click' , ()=>{
+            if(dropDownOpen == false){
+                dropDown.style.display = 'flex';
+                dropDownOpen = true
+            }
+            else{
+                dropDown.style.display = 'none';
+                dropDownOpen= false;
+            }
+            
+            
+        })
         let hamburger = document.querySelector('.hamburger');
         hamburger.onclick = function () {
             let links = document.querySelector('.links');
