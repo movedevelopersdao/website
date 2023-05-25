@@ -43,6 +43,24 @@ body{
     align-items: center;
 }
 
+.drop-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 a:link {
     color: #FFFFFF;
     text-decoration: none;
