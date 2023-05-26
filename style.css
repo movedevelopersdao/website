@@ -43,7 +43,7 @@ body{
     align-items: center;
 }
 
-.drop-down{
+/* .drop-down{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +59,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+.drop-down{
+    margin-top: 25px;
+    position: absolute;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+}
+
+.drop-down-element{
+    border: 1px solid white;
+    padding: 10px 10px;
 }
 
 a:link {
@@ -675,8 +690,8 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
 }
 
 .footer{
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8464635854341737) 40%);
+    /* background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8464635854341737) 40%); */
 width: 100%;
 /* padding: 10px 30px; */
 }
