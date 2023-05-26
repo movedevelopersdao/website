@@ -390,9 +390,9 @@
             </div>
         </div>
         <div class="links">
-            <div class="link-box" id="dashBoard"><a href="#" onclick="return false" class="link">Developer Hub</a></div>
+            <div class="link-box"><a href="#" onclick="return false" class="link">Developer Hub</a></div>
             <div class="link-box"><a href="https://move-developers-dao.gitbook.io/aptos-move-by-example/" class="link">Learn</a></div>
-            <div class="link-box"><a href="#" onclick="return false" class="link">Dashboards</a></div>
+            <div class="link-box"><a id="dashBoard" href="#" onclick="return false" class="link">Dashboards</a><div id="drop-down" class="drop-down"><a style="text-align: center;" href="https://move-developers-dao.gitbook.io/aptos-move-by-example/"  class="link drop-down-element">Events Board</a><a style="text-align: center;" href="#" class="link drop-down-element">RFP Board</a></div></div>
             <div class="link-box"><a href="https://linktr.ee/movedevelopers" class="link">Socials</a></div>
         </div>
     </nav>
@@ -602,6 +602,43 @@
                 <img onclick="openFunDao()" class="community-img" src="./images/funmovedao.jpg" alt="FUN MOVE DAO">
                 
             </div>
+            <div class="community">
+                <img onclick="openFunDao()" class="community-img chennai-web3-img" src="./images/chennaiweb3.png" alt="FUN MOVE DAO">
+                
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="college-communities community-partners">
+        <div class="college-communities-head">
+            <h1 class="event-para">EDUCATION PARTNERS</h1>
+        </div>
+        <div class="communities">
+            <div class="community">
+                <img onclick="openAnyLink('https://imcoding.online/')" class="college-img" src="./images/imcoding.svg" alt="Hydrebad DAO">
+                
+            </div>
+            <div class="community">
+                <img onclick="openAnyLink('https://overmind.xyz/')" class="college-img" src="./images/overmind-mainweb-removebg-preview.png" alt="Hydrebad DAO">
+                
+            </div>
+            
+            <!-- <div class="community">
+                <img onclick="openGdd()" class="community-img" src="./images/gdd-removebg-preview.png" alt="GARI DEVELOPERS DAO">
+                
+            </div>
+            <div class="community">
+                <img onclick="openPuneDao()" class="community-img" src="./images/puneDao.png" alt="PUNE DAO">
+                
+            </div>
+            <div class="community">
+                <img onclick="openFunDao()" class="community-img" src="./images/funmovedao.jpg" alt="FUN MOVE DAO">
+                
+            </div> -->
 
 
 
@@ -690,7 +727,6 @@
                         <img  onclick="openLinkedin()" class="follow-us-img" src="./images/linkedin.png" alt="">
                         <img  onclick="openTwitter()" class="follow-us-img" src="./images/twitter.png" alt="">
                         <img  onclick="openDiscord()" class="follow-us-img" src="./images/discord.png" alt="">
-                        <img  onclick="openGitHub()" class="follow-us-img" src="./images/git.jpg" alt="">
                     </div>
                     
                 </div>
@@ -708,21 +744,21 @@ src="https://app.wonderchat.io/chatbot/clgkrayjn0brbmc0kflpb08u7"
 
     <script>
         
-//         let dashBoard = document.getElementById('dashBoard');
-//         let dropDown = document.getElementById('drop-down');
-//         let dropDownOpen = false
-//         dashBoard.addEventListener('click' , ()=>{
-//             if(dropDownOpen == false){
-//                 dropDown.style.display = 'flex';
-//                 dropDownOpen = true
-//             }
-//             else{
-//                 dropDown.style.display = 'none';
-//                 dropDownOpen= false;
-//             }
+        // let dashBoard = document.getElementById('dashBoard');
+        // let dropDown = document.getElementById('drop-down');
+        // let dropDownOpen = false
+        // dashBoard.addEventListener('click' , ()=>{
+        //     if(dropDownOpen == false){
+        //         dropDown.style.display = 'flex';
+        //         dropDownOpen = true
+        //     }
+        //     else{
+        //         dropDown.style.display = 'none';
+        //         dropDownOpen= false;
+        //     }
             
             
-//         })
+        // })
         let hamburger = document.querySelector('.hamburger');
         hamburger.onclick = function () {
             let links = document.querySelector('.links');
@@ -816,6 +852,9 @@ src="https://app.wonderchat.io/chatbot/clgkrayjn0brbmc0kflpb08u7"
         }
         function openFunDao(){
             window.open('https://twitter.com/movefunsdao?s=21&t=uGmuP8mHNlf7MNnFWQqcGQ', '_self');
+        }
+        function openAnyLink(link){
+            window.open(link, '_self');
         }
         
     </script>
