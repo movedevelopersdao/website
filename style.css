@@ -678,6 +678,14 @@ background: linear-gradient(180deg, #5957D2 0%, rgba(255, 174, 223, 0.866406) 82
     margin-left: 20px;
     margin-right: 20px;
 }
+.communitiess{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
 
 .community-img{
     height: 100px;
@@ -857,6 +865,13 @@ cursor: pointer;
         left: 300px;
     }
     .communities{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .communitiess{
+        margin-top: -10px;
         display: flex;
         flex-direction: column;
         
